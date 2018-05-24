@@ -4,8 +4,6 @@
 },
 "scripts": {
   "start": "node server.js"
-}
-{
+},
   "description": "Robot control web application",
   "main": "server.js"
-}
