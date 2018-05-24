@@ -1,0 +1,31 @@
+<html><head><title>Robot control values</title></head><body>
+<input type="radio" name="movement" id="move_forward" value="FORWARD" checked="unchecked"/>Forward
+            <input type="radio" name="movement" id="move_left" value="LeFT" checked="unchecked" /> Left
+            <input type="radio" name="movement" id="move_right" value="RIGHT" checked="unchecked" /> Right
+            <input type="radio" name="movement" id="move_back" value="BACK" checked="unchecked" /> Back
+            <input type="radio" name="movement" id="move_stop" value="STOP" checked="checked" /> Stop
+            <button onclick="move_control()">submit</button> 
+            <div id="insert"></div>
+            <script>
+            function move_control() {
+            	var point= 0;
+	            if(document.getElementById('move_forward').checked) {
+	              point = 100;
+	            }else if(document.getElementById('move_left').checked) {
+	              point = 200;
+	            }
+	            else if(document.getElementById('move_right').checked) {
+	              point = 300;
+	            }
+	            else if(document.getElementById('move_back').checked) {
+	              point = 400;
+	            }
+	            else if(document.getElementById('move_stop').checked) {
+	              point = 500;
+	            }
+	        document.getElementById("insert").innerHTML = point;
+		    sessionStorage.myValue = point;
+	    }
+            </script>
+    </body> 
+    </html>
