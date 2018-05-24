@@ -1,15 +1,11 @@
+
+"engines": {
+  "node": "6.2.0"
+},
+"scripts": {
+  "start": "node server.js"
+}
 {
-  "name": "imad-base",
-  "version": "0.1.0",
-  "description": "Articles web application",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.14.0",
-    "morgan": "^1.7.0"
-  }
+  "description": "Robot control web application",
+  "main": "server.js"
 }
